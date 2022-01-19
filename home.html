@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Главная</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20220119134341">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<a href="#" class="header__logo"><img src="img/header/logotype.jpg" alt="logotype"></a>
+				<div class="header__menu menu">
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="#" class="menu__link">Главная</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Услуги</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Обучение</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header__contacts">
+					<a href="tel:+79224052545" class="header__phone _icon-phonecall">+7&nbsp;922&nbsp;405&nbsp;25&nbsp;45</a>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+
+			<div class="page__main-block main-block">
+				<div class="main-block__wide-container">
+					<div data-da=".main-block__container,1123.5,last" class="main-block__bg">
+						<div class="main-block__image-ibg"><img src="img/main-block/main-img.jpg" alt="sharm-main"></div>
+						<span data-da=".main-block__container,1124,1" class="main-block__text-bg">Sharm</span>
+					</div>
+					<div class="main-block__container">
+						<div class="main-block__body">
+							<div class="main-block__title">Салон красоты</div>
+							<div class="main-block__slogan">Мы создаем настроение.</div>
+							<button data-popup="#signup" class="main-block__button btn" type="button">Записаться</button>
+						</div>
+						<div data-da=".menu__body,767.5,last" class="main-block__social">
+							<a href="#" class="main-block__link _icon-vk"></a>
+							<a href="#" class="main-block__link _icon-insta"></a>
+							<a href="#" class="main-block__link _icon-fb"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+			</div>
+		</footer>
+	</div>
+	<div id="signup" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"></button>
+				<div class="popup__body">
+					<div class="popup__titles">
+						<div class="popup__main-title">Онлайн запись</div>
+						<div class="popup__sub-title">заполните фору для записи в салон</div>
+					</div>
+					<form action="#" class="popup__form form-popup">
+						<div class="form-popup__line">
+							<input class="form-popup__input" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Имя">
+						</div>
+						<div class="form-popup__line">
+							<input class="form-popup__input" autocomplete="off" type="tel" name="form[]" data-error="Ошибка" placeholder="Телефон" data-required="">
+						</div>
+						<div class="form-popup__line">
+							<input class="form-popup__input" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Услуга">
+						</div>
+						<div class="form-popup__check">
+							<div class="checkbox">
+								<input id="check_1" data-error="" class="checkbox__input" type="checkbox" value="1" name="form[]" data-required="">
+								<label for="check_1" class="checkbox__label">
+									<span class="checkbox__text">Даю согласие на обработку персональных данных</span>
+								</label>
+							</div>
+						</div>
+						<button type="submit" class="form-popup__button">Отправить</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20220119134341"></script>
+</body>
+
+</html>
