@@ -2439,8 +2439,9 @@ body.popup-show::after {
   display: flex;
   z-index: 1;
   display: flex;
+	flex-wrap: wrap;
   align-items: center;
-  column-gap: 1.1875rem;
+  gap: 1.1875rem;
 }
 @media (max-width: 47.99875em) {
   .main-block__social {
