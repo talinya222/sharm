@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>SHARM Contacts</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20220517170224">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<a href="#" class="header__logo"><img src="img/logotype.jpg" alt="logotype"></a>
+				<div class="header__menu menu">
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="home.html" class="menu__link">Home</a></li>
+							<li class="menu__item"><a href="services.html" class="menu__link">Services</a></li>
+							<li class="menu__item"><a href="education.html" class="menu__link">Education</a></li>
+							<li class="menu__item"><a href="contacts.html" class="menu__link">Contacts</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header__contacts">
+					<a href="tel:8800001100" class="header__phone _icon-phonecall">8&nbsp;800&nbsp;001&nbsp;100</a>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+
+			<section class="page__main-block main-block main-block_contacts">
+				<div class="main-block__wide-container">
+					<div data-da=".main-block__container-con,1123.5,last" class="main-block__bg">
+						<div class="main-block__image-ibg">
+							<div id="map"></div>
+						</div>
+						<span data-da=".main-block__container-con,767.5,first" class="main-block__text-bg">Sharm</span>
+					</div>
+					<div class="main-block__container-con">
+						<div class="main-block__content">
+							<h1 class="main-block__main-title">Contacts</h1>
+							<div class="main-block__titles">
+								<h3 class="main-block__contacts-title">Phone number</h3>
+								<a href="tel:8800001100" class="main-block__text main-block__text_active-link">8&nbsp;800&nbsp;001&nbsp;100</a>
+							</div>
+							<div class="main-block__titles">
+								<h3 class="main-block__contacts-title">Salon address</h3>
+								<div class="main-block__text">Kyiv, st. Shevchenko, 10.</div>
+							</div>
+							<div class="main-block__titles">
+								<h3 class="main-block__contacts-title">Working hours</h3>
+								<div class="main-block__text">Daily from 9:00 to 20:00</div>
+							</div>
+							<div class="main-block__titles">
+								<h3 class="main-block__contacts-title">Email</h3>
+								<a href="mailto:sharm.salon@gmail.com" class="main-block__text main-block__text_active-link">sharm.salon@gmail.com</a>
+							</div>
+							<div class="main-block__titles">
+								<div class="main-block__contacts-title">We are in social networks</div>
+								<div class="main-block__social-con">
+									<a href="#" class="main-block__link _icon-vk"></a>
+									<a href="#" class="main-block__link _icon-insta"></a>
+									<a href="#" class="main-block__link _icon-fb"></a>
+								</div>
+							</div>
+							<div class="main-block__copy">&copy; 2020 SHARM Beauty studio All rights reserved</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</main>
+	</div>
+	<script src="js/app.min.js?_v=20220517170224"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVfeb4TwkT_YEs5Pvoll9md04aal3jA0M&callback=initMap&_v=20220517170224" async defer></script>
+	<!-- <script src="https://maps.googleapis.com/maps/api/staticmap?key=AIzaSyAVfeb4TwkT_YEs5Pvoll9md04aal3jA0M&center=61.25329110363175,75.18770853544311&zoom=17&format=png&maptype=roadmap&style=feature:administrative%7Celement:geometry.fill%7Ccolor:0xeceaea%7Cvisibility:on&style=feature:administrative%7Celement:geometry.stroke%7Ccolor:0xdedada&style=feature:administrative%7Celement:labels.text.stroke%7Ccolor:0xeceaea&style=feature:landscape%7Celement:geometry.fill%7Ccolor:0xeceaea&style=feature:landscape%7Celement:geometry.stroke%7Ccolor:0xdedada&style=feature:landscape%7Celement:labels.text.stroke%7Ccolor:0xeceaea&style=feature:poi%7Celement:labels.icon%7Cvisibility:off&style=feature:poi.park%7Celement:geometry.fill%7Ccolor:0xeceaea&style=feature:poi.park%7Celement:geometry.stroke%7Ccolor:0xdedada&size=480x360&callback=initMap&_v=20220517170224" async defer></script> -->
+
+	<script>
+		function initMap() {
+			var coordinates = {
+					lat: 61.253507360848104,
+					lng: 75.18839003342447
+				},
+
+				map = new google.maps.Map(document.getElementById('map'), {
+					center: coordinates,
+					zoom: 18,
+				});
+			map.setOptions({
+				styles: styles
+			});
+
+			image = 'img/map/location.svg',
+				marker = new google.maps.Marker({
+					position: coordinates,
+					map: map,
+					icon: image
+				});
+		}
+
+		var styles = [{
+				"featureType": "administrative",
+				"elementType": "geometry.fill",
+				"stylers": [{
+						"color": "#eceaea"
+					},
+					{
+						"visibility": "on"
+					}
+				]
+			},
+			{
+				"featureType": "administrative",
+				"elementType": "geometry.stroke",
+				"stylers": [{
+					"color": "#dedada"
+				}]
+			},
+			{
+				"featureType": "administrative",
+				"elementType": "labels.text.stroke",
+				"stylers": [{
+					"color": "#eceaea"
+				}]
+			},
+			{
+				"featureType": "landscape",
+				"elementType": "geometry.fill",
+				"stylers": [{
+					"color": "#eceaea"
+				}]
+			},
+			{
+				"featureType": "landscape",
+				"elementType": "geometry.stroke",
+				"stylers": [{
+					"color": "#dedada"
+				}]
+			},
+			{
+				"featureType": "landscape",
+				"elementType": "labels.text.stroke",
+				"stylers": [{
+					"color": "#eceaea"
+				}]
+			},
+			{
+				"featureType": "poi",
+				"elementType": "labels.icon",
+				"stylers": [{
+					"visibility": "off"
+				}]
+			},
+			{
+				"featureType": "poi.park",
+				"elementType": "geometry.fill",
+				"stylers": [{
+					"color": "#eceaea"
+				}]
+			},
+			{
+				"featureType": "poi.park",
+				"elementType": "geometry.stroke",
+				"stylers": [{
+					"color": "#dedada"
+				}]
+			}
+		]
+	</script>
+</body>
+
+</html>
